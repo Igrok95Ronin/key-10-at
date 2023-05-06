@@ -38,7 +38,31 @@ body{
 $mainColor : #165693;
 
 @mixin btn {
-
+    color: #fff;
+    background-color: $mainColor;
+    padding: 10px 20px 10px 50px;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 1px;
+    span{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/14.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &:hover{
+        color: #fff;
+    }
 }
 @mixin line {
     position: relative;
