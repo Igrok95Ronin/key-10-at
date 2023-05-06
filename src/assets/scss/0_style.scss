@@ -40,3 +40,22 @@ $mainColor : #165693;
 @mixin btn {
 
 }
+@mixin line {
+    position: relative;
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/06.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 400px;
+        top: 0;
+
+    }
+    &::after{
+        right: 0;
+        top: 0;
+    }
+}
