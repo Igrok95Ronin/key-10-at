@@ -1,0 +1,82 @@
+.wko {
+    padding: 35px 0 35px;
+}
+.wko__box {
+}
+.wko__top {
+
+}
+.wko__topWrapper {
+    @include line;
+    &::before,
+    &::after{
+        background-size: cover;
+        width: 60px;
+        height: 100%;
+        top: 0;
+    }
+}
+.wko__top-inner {
+    background-color: #f8f8f8;
+    margin: 0 70px;
+    padding: 50px 20px 0px;
+}
+.wko__top__title {
+    color: $mainColor;
+    font-weight: 700;
+    padding-left: 50px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/ok6.png);
+        background-size: cover;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+    }
+}
+.wko__top-inner2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.wko__top-inner2-txt {
+    font-size: 20px;
+    margin-top: 50px;
+}
+.wko__top-inner2-imgW {
+}
+.wko__top-inner2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wko__top-btnW {
+    text-align: center;
+    margin-top: 30px;
+}
+.wko__top-btn {
+    @include btn;
+}
+.wko__bottom {
+    padding: 50px 0;
+}
+.wko__bottom__title {
+    text-align: center;
+    font-weight: 700;
+    color: $mainColor;
+    margin-bottom: 30px;
+}
+.wko__bottom__partner {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 150px;
+}
+.wko__bottom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
