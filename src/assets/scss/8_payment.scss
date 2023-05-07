@@ -1,0 +1,105 @@
+.payment {
+    padding: 35px 0;
+}
+.payment__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.payment__left {
+    @include line;
+}
+.payment__wrapper {
+    margin: 0 50px;
+    transform: translateY(50%);
+}
+.payment__wrapper2{
+    margin: 0 50px;
+}
+.payment__title {
+    color: $mainColor;
+    font-weight: 700;
+    padding: 20px;
+    padding-left: 70px;
+    background-color: #f8f8f8;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/20.png);
+        background-size: cover;
+        left: 20px;
+        width: 35px;
+        height: 35px;
+    }
+}
+.payment__inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.payment__inner-block {
+    text-align: center;
+}
+.payment__inner-block-img {
+    width: 100%;
+    height: 90px;
+}
+.payment__inner-block-name {
+    margin-top: 10px;
+}
+.payment__right {
+    @include line;
+}
+.payment__right-title {
+    background-color: #f8f8f8;
+    color: $mainColor;
+    font-weight: 700;
+    padding: 20px;
+    padding-left: 70px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/24.png);
+        background-size: cover;
+        left: 20px;
+        width: 35px;
+        height: 35px;
+    }
+}
+.payment__right-txt {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 0 10px;
+}
+.payment__right-inner {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.payment__right-inner-block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.payment__right-inner-block-imgW {
+}
+.payment__right-inner-block-img{
+    max-width: 130px;
+    max-height: 130px;
+}
+.payment__right-inner-block-name {
+}
+.payment__right-btnW {
+    text-align: center;
+    margin-top: 30px;
+}
+.payment__right-btn {
+    @include btn;
+}
