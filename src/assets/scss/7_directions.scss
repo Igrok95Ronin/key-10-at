@@ -1,0 +1,66 @@
+.directions {
+    padding: 35px 0;
+}
+.directions__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.directions__left {
+    @include line;
+    display: flex;
+    align-items: center;
+
+}
+.directions__inner {
+    background-color: #f8f8f8;
+    margin: 0 50px;
+    padding: 50px 20px;
+}
+.directions__title {
+    font-weight: 700;
+    color: $mainColor;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/18.png);
+        background-size: cover;
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+}
+.directions__txt {
+    font-size: 20px;
+}
+.directions__right {
+    @include line;
+
+}
+.directions__inner2 {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    margin: 0 50px;
+    padding: 20px;
+}
+.directions__inner2-imgW {
+}
+.directions__inner2-img {
+    width: 100%;
+    height: 100%;
+}
+.directions__inner2-txt {
+    font-size: 20px;
+    font-weight: 700;
+}
+.directions__right-btnW {
+    text-align: center;
+}
+.directions__right-btn {
+    @include btn;
+    margin-top: 30px;
+}
