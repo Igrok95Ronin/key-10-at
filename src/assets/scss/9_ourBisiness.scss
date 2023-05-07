@@ -1,0 +1,72 @@
+.ourBisiness {
+    padding: 35px 0;
+}
+.ourBisiness__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.ourBisiness__left {
+    @include line;
+    display: flex;
+    align-items: center;
+}
+.ourBisiness__wrapper {
+    margin: 0 50px;
+    background-color: #f8f8f8;
+}
+.ourBisiness__title {
+    font-weight: 700;
+    color: $mainColor;
+    padding: 10px 0;
+    padding-left: 50px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/28.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+.ourBisiness__galery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.ourBisiness__galery-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ourBisiness__galery-left-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.ourBisiness__galery-right {
+}
+.ourBisiness__galery-right-img {
+    width: 100%;
+    height: 100%;
+}
+.ourBisiness__right {
+    @include line;
+}
+.ourBisiness__wrappe2 {
+    margin: 0 50px;
+}
+.ourBisiness__right-img {
+    width: 100%;
+    height: 100%;
+}
+.ourBisiness__right__btnW {
+    text-align: center;
+    margin-top: 30px;
+}
+.ourBisiness__right-btn {
+    @include btn;
+}
